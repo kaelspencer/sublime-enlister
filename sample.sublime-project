@@ -1,0 +1,13 @@
+{
+    "enlister": [
+        {
+            "name": "terminal",
+            "command": "gnome-terminal",
+            "working_dir": "/home/kael/Documents/code"
+        },{
+            "name": "python",
+            "command": "gnome-terminal --tab --maximize --command python",
+            "working_dir": "/home/kael/Documents/code"
+        }
+    ]
+}
