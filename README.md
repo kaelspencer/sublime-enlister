@@ -1,11 +1,15 @@
 # sublime-enlister
 
 Enlister is a plugin that can launch project specific tools. Typically, this is used to launch build environments that vary depending on the project. The plugin looks for the project setting `enlister` which is an array of objects that have three properties:
-* name - The display name in the command palette
+* name - The display name in the command palette.
 * command - The command to launch. This is passed directly to `subprocess`. It can be an array of strings if arguments need to be split out.
 * working_dir - The working directory.
 
 See `enlister.sublime-project` for samples, or look below.
+
+## Usage
+
+Enlister looks for your commands in the current project's settings. Launch the command palette and type `enlister`. This causes the command palette to display all valid commands for the project.
 
 ## Samples
 
