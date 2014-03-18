@@ -1,13 +1,25 @@
 {
-    "enlister": [
+    "enlister":
+    [
         {
-            "name": "terminal",
             "command": "gnome-terminal",
+            "name": "terminal",
             "working_dir": "/home/kael/Documents/code"
-        },{
-            "name": "python",
+        },
+        {
             "command": "gnome-terminal --tab --maximize --command python",
+            "name": "python",
             "working_dir": "/home/kael/Documents/code"
+        },
+        {
+            "command": "c:\\Windows\\System32\\cmd.exe /k \"d:\\env\\project1\\start.cmd\"",
+            "name": "windows",
+            "working_dir": "d:\\env\\project1"
+        },
+        {
+            "command": "c:\\Windows\\System32\\cmd.exe /k \"d:\\Tools\\ConEmu\\ConEmu\\ConEmuC64.exe /ATTACH /NOCMD & d:\\env\\project1\\start.cmd\"",
+            "name": "conemu",
+            "working_dir": "d:\\env\\project1"
         }
-    ]
+    ],
 }
