@@ -33,5 +33,12 @@ class EnlisterCommand(sublime_plugin.WindowCommand):
         if picked < 0:
             return
 
+        shell = False
+
+        if 'shell' in self.commands[picked] and self.commands[picked]['shell'] == True:
+            shell = True
+
+        print('Shell: %s' % shell)
+
         print(self.commands[picked])
-        subprocess.Popen(self.commands[picked]['command'], cwd=self.commands[picked]['working_dir'], shell=True)
+        subprocess.Popen(self.commands[picked]['command'], cwd=self.commands[picked]['working_dir'], shell=shell)
